@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Message 💌</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      margin-top: 100px;
+      background: #ffe6f0;
+    }
+    h1 { color: #ff4d88; }
+    button {
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 18px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #yes { background-color: #ff4d88; color: white; }
+    #no { background-color: #ccc; }
+  </style>
+</head>
+<body>
+
+  <h1>យើងត្រូវគ្នាវិញបានអត់? 💔➡️❤️</h1>
+
+  <button id="yes" onclick="yes()">បាន 💖</button>
+  <button id="no" onmouseover="move()">មិនបាន 😢</button>
+
+  <script>
+    function yes() {
+      alert("អគុណដែលផ្តល់ឪកាសឲ្យបង I luv u Nary❤️🥺");
+    }
+
+    function move() {
+      let btn = document.getElementById("no");
+      btn.style.position = "absolute";
+      btn.style.top = Math.random() * window.innerHeight + "px";
+      btn.style.left = Math.random() * window.innerWidth + "px";
+    }
+  </script>
+
+</body>
+</html>
